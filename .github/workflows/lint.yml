@@ -30,7 +30,7 @@ jobs:
           make deps generate
         shell: bash
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3
+        uses: golangci/golangci-lint-action@v6
         with:
           version: v1.53
           working-directory: go/src/github.com/${{ env.REPOSITORY }}
